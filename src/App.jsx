@@ -5,15 +5,12 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [address, setAddress] = useState(null);
-  const [ipAddress, setIpAddress] = useState();
-  const checkIpAddress = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/gi
-  // const checkDomain = /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9](?:\.[-zA-Z]{2,})+/
+  const [ipAddress, setIpAddress] = useState("");
 
   const fetchData = () => {
     try {
       const getData = async () => {
-        const getInitialData = await fetch(`https:geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_APP_API_KEY}&${checkIpAddress.test(ipAddress) ? `ipAddress=${ipAddress}` : ""
-      }`)
+        const getInitialData = await fetch(`https:geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_APP_API_KEY}&ipAddress=${ipAddress}`)
         const data = await getInitialData.json()
         setAddress(data)
       }

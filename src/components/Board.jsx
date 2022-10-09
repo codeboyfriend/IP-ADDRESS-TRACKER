@@ -2,7 +2,7 @@ const Board = ({
     address
 }) => {
   return (
-    <div className="bg-white text-black flex flex-col mx-8 lg:mx-20 rounded-lg items-center md:items-start space-y-4 md:space-y-0 md:flex-row justify-between p-8 relative mb-[-15rem] md:-mb-10 relative" style={{
+    <div className="bg-white text-black flex flex-col mx-8 lg:mx-20 rounded-lg items-center md:items-start space-y-4 md:space-y-0 md:flex-row justify-between p-8 relative md-[-18rem] md:-mb-10 relative" style={{
         zIndex: 1000
     }}>
         <div className="lg:border-r pr-0 lg:pr-12 lg-border-slate-200">
