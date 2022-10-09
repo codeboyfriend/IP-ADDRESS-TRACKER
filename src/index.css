@@ -21,7 +21,7 @@
 
 .loadOne {
   animation-name: loadOne;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -40,7 +40,8 @@
 
 .loadTwo {
   animation-name: loadTwo;
-  animation-duration: 1s;
+  animation-delay: .5s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -59,7 +60,8 @@
 
 .loadThree {
   animation-name: loadThree;
-  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }

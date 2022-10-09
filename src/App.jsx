@@ -10,7 +10,7 @@ function App() {
   const fetchData = () => {
     try {
       const getData = async () => {
-        const getInitialData = await fetch(`https:geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_APP_API_KEY}&ipAddress=${ipAddress}`)
+        const getInitialData = await fetch(`https:geo.ipify.org/api/v2/country,city?apiKey=at_ns6JztMHXCUkpwqabV9lyXmVVuRFm&ipAddress=${ipAddress}`)
         const data = await getInitialData.json()
         setAddress(data)
       }
